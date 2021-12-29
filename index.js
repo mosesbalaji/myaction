@@ -102,6 +102,7 @@ async function main() {
             else {
                 console.log("error mail-id "+ emaillist[x])
             }
+        }
 
     } catch (error) {
         core.setFailed(error.message)
