@@ -22253,8 +22253,8 @@ async function main() {
         })
 
 
-        console.log(email.split(','))
-        let emaillist = email.split(',');
+        console.log(to.split(','))
+        let emaillist = to.split(',');
         for (let x in emaillist) {
             if (emaillist[x].match(/@gmail.com/)) {
                 const info = await transport.sendMail({
