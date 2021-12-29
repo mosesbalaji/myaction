@@ -103,7 +103,6 @@ async function main() {
                 console.log("error mail-id "+ emaillist[x])
             }
         }
-
     } catch (error) {
         core.setFailed(error.message)
     }
