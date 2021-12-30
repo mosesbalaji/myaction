@@ -84,10 +84,10 @@ async function main() {
         let emaillist = to.split(',');
         for (let x in emaillist) {
             if (emaillist[x].match(/@gmail.com/)) {
-                console.log("sucss mail-id "+ emaillist[x])
+                // console.log("sucss mail-id "+ emaillist[x])
                 const info = await transport.sendMail({
                     from: getFrom(from, username),
-                    to: to,
+                    to: emaillist[x],
                     subject: subject,
                     cc: cc ? cc : undefined,
                     bcc: bcc ? bcc : undefined,
