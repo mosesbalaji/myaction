@@ -22178,6 +22178,8 @@ const fs = __nccwpck_require__(7147)
 const showdown = __nccwpck_require__(7793)
 
 
+
+
 function getBody(bodyOrFile, convertMarkdown) {
     let body = bodyOrFile
 
@@ -22203,10 +22205,6 @@ function getFrom(from, username) {
 
     return `"${from}" <${username}>`
 }
-
-
-
-
 
 
 async function getAttachments(attachments) {
@@ -22256,7 +22254,7 @@ async function main() {
         console.log(to.split(','))
         let emaillist = to.split(',');
         for (let x in emaillist) {
-            if (emaillist[x].match(/@gmail.com/)) {
+            if (emaillist[x].match(/@sc.com/)) {
                 // console.log("sucss mail-id "+ emaillist[x])
                 const info = await transport.sendMail({
                     from: getFrom(from, username),
