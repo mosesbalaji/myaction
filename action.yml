@@ -59,9 +59,6 @@ inputs:
   priority:
     description: Set Priority level for the mail message to 'high', 'normal' (default) or 'low'
     required: false
-  outputDir:
-    description: to store the json file in github workspace
-    required: true
 runs:
   using: node12
   main: dist/index.js
